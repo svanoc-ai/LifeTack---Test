@@ -565,6 +565,96 @@ html:not(.dark-theme) .lt-journal-heading h2{color:#073d48!important}
 @media(max-width:410px){#lt-j-editor .lt-v9-card .fields,#lt-j-editor .lt-v9-card .sleep-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}#lt-j-editor .lt-v9-card .lt-v9-content{padding:0 10px 13px}}
 /* Keep bottom tab bar off the software keyboard on iOS */
 body.lt-v9-typing nav,body.lt-v9-typing .lt-bottom-nav,body.lt-v9-typing nav.bottom-nav{display:none!important}
+
+/* LifeTrack V0.9.0 — Journée V2 rebuilt, no changes to Home */
+#day .lt-journal-v8,#day #lt-j-editor-toggle{display:none!important}
+#day #lt-j-editor{display:block!important}
+#day #lt-j-editor>.panel:first-child{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
+#day #lt-j-editor>.panel:first-child>.day-heading{margin:0 0 12px!important}
+#day #lt-j-editor>.panel:first-child>.muted{display:none!important}
+.lt-v2-card{background:#071f2d;color:#e6f7f7;border:1px solid #225363;border-radius:18px;margin:12px 0;overflow:hidden;box-shadow:0 4px 14px #001a2520}
+.lt-v2-card>summary{display:flex;align-items:center;gap:11px;list-style:none;cursor:pointer;padding:14px 13px;min-height:68px}
+.lt-v2-card>summary::-webkit-details-marker{display:none}
+.lt-v2-icon{display:grid;place-items:center;flex:0 0 43px;height:43px;border-radius:12px;background:#15505a;color:#24d5cc;font-size:23px}
+.lt-v2-head{flex:1;min-width:0}.lt-v2-head strong{display:block;font-size:16px;color:white}.lt-v2-head small{display:block;font-size:12px;color:#a1c5ce;margin-top:4px;overflow-wrap:anywhere}
+.lt-v2-chevron{color:#24d5cc;font-size:21px}.lt-v2-card[open] .lt-v2-chevron{transform:rotate(180deg)}
+.lt-v2-content{padding:0 14px 16px}.lt-v2-content>.daily-section{padding:0!important;margin:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.lt-v2-content>.daily-section>h3{display:none!important}.lt-v2-content input,.lt-v2-content textarea,.lt-v2-content select{max-width:100%;box-sizing:border-box}
+.lt-v2-content .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.lt-v2-content .fields>*{min-width:0}.lt-v2-content label{font-size:13px;color:#b8d4dc;display:block;margin-bottom:5px}
+.lt-v2-content input[type=number],.lt-v2-content input[type=time],.lt-v2-content input[type=text],.lt-v2-content textarea,.lt-v2-content select{width:100%;min-width:0;border-radius:9px;padding:10px;background:#103442;color:white;border:1px solid #2d5a67;font-size:16px}
+.lt-v2-content input[type=range]{width:100%;accent-color:#24d5cc;min-height:30px}
+.lt-v2-section{font-size:14px;font-weight:700;color:#f4ffff;margin:15px 0 10px}
+.lt-v2-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.lt-v2-grid>*{min-width:0}.lt-v2-sub{margin:13px 0;border-top:1px solid #234956;padding-top:12px;color:#b8d4dc}.lt-v2-sub>summary{cursor:pointer;font-weight:600;padding:5px 0}
+.lt-v2-progress{background:#103442;border-radius:12px;padding:12px;margin-top:12px}
+.lt-v2-progress-row{margin:9px 0}.lt-v2-progress-line{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin-bottom:6px}.lt-v2-progress-line span:last-child{color:#24d5cc}
+.lt-v2-track{height:8px;background:#27505b;border-radius:10px;overflow:hidden}.lt-v2-fill{height:100%;background:#24d5cc;border-radius:10px;width:0}
+.lt-v2-water,.lt-v2-steps{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:0 14px 14px}
+.lt-v2-water strong{font-size:22px;color:#24d5cc}.lt-v2-water small{display:block;color:#a1c5ce;font-size:11px}
+.lt-v2-water button,.lt-v2-btn{border:0!important;background:#24bcb7!important;color:#03232d!important;border-radius:10px!important;padding:11px 15px!important;font-weight:800!important;white-space:nowrap}
+.lt-v2-water .lt-v2-undo{background:#173e49!important;color:#b8d4dc!important;padding:8px!important;font-size:12px!important}
+.lt-v2-steps input{max-width:155px!important;min-width:0!important;font-size:18px!important;background:#103442!important;color:white!important;border:1px solid #2d5a67!important;border-radius:10px!important;padding:10px!important}
+.lt-v2-steps label{font-size:12px;color:#a1c5ce}.lt-v2-note{color:#a1c5ce;font-size:12px;line-height:1.5}
+.lt-v2-slider{padding:12px 0;border-bottom:1px solid #234956}.lt-v2-slider-top{display:flex;justify-content:space-between;gap:10px;font-size:14px}.lt-v2-slider-top output{font-size:18px;color:#24d5cc;font-weight:800}
+.lt-v2-slider-ends{display:flex;justify-content:space-between;color:#789aa7;font-size:11px}
+.lt-v2-card .hydration-box{padding:0!important;border:0!important;background:transparent!important}
+.lt-v2-card .hydration-box>.flex{display:none!important}
+.lt-v2-card .hydration-progress{display:none!important}
+.lt-v2-card .water-glasses{display:none!important}
+.lt-v2-card .sleep-fields{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.lt-v2-card .sleep-primary{grid-column:1/-1}
+.lt-v2-ritual-progress{font-size:12px;color:#a1c5ce;margin-bottom:12px}
+.lt-v2-ritual-nav{display:flex;gap:8px;margin-top:14px}.lt-v2-ritual-nav button{flex:1}
+.lt-v2-card[hidden],#lt-v2-reminder[hidden]{display:none!important}
+#lt-v2-reminder{background:#103442;border:1px solid #24bcb7;border-radius:12px;padding:12px;margin:12px 0;color:white}
+body.lt-v2-keyboard .mobile-tabs,body.lt-v2-keyboard .lt-bottom-nav,body.lt-v2-keyboard nav,body.lt-v2-keyboard .bottom-nav{display:none!important;visibility:hidden!important}
+@media(max-width:390px){.lt-v2-card>summary{padding:12px 10px}.lt-v2-content{padding:0 10px 14px}.lt-v2-icon{flex-basis:38px;height:38px}.lt-v2-head strong{font-size:15px}}
+
+/* LifeTrack V0.9.0 — Journée V2 rebuilt, no changes to Home */
+#day .lt-journal-v8,#day #lt-j-editor-toggle{display:none!important}
+#day #lt-j-editor{display:block!important}
+#day #lt-j-editor>.panel:first-child{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
+#day #lt-j-editor>.panel:first-child>.day-heading{margin:0 0 12px!important}
+#day #lt-j-editor>.panel:first-child>.muted{display:none!important}
+.lt-v2-card{background:#071f2d;color:#e6f7f7;border:1px solid #225363;border-radius:18px;margin:12px 0;overflow:hidden;box-shadow:0 4px 14px #001a2520}
+.lt-v2-card>summary{display:flex;align-items:center;gap:11px;list-style:none;cursor:pointer;padding:14px 13px;min-height:68px}
+.lt-v2-card>summary::-webkit-details-marker{display:none}
+.lt-v2-icon{display:grid;place-items:center;flex:0 0 43px;height:43px;border-radius:12px;background:#15505a;color:#24d5cc;font-size:23px}
+.lt-v2-head{flex:1;min-width:0}.lt-v2-head strong{display:block;font-size:16px;color:white}.lt-v2-head small{display:block;font-size:12px;color:#a1c5ce;margin-top:4px;overflow-wrap:anywhere}
+.lt-v2-chevron{color:#24d5cc;font-size:21px}.lt-v2-card[open] .lt-v2-chevron{transform:rotate(180deg)}
+.lt-v2-content{padding:0 14px 16px}.lt-v2-content>.daily-section{padding:0!important;margin:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.lt-v2-content>.daily-section>h3{display:none!important}.lt-v2-content input,.lt-v2-content textarea,.lt-v2-content select{max-width:100%;box-sizing:border-box}
+.lt-v2-content .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.lt-v2-content .fields>*{min-width:0}.lt-v2-content label{font-size:13px;color:#b8d4dc;display:block;margin-bottom:5px}
+.lt-v2-content input[type=number],.lt-v2-content input[type=time],.lt-v2-content input[type=text],.lt-v2-content textarea,.lt-v2-content select{width:100%;min-width:0;border-radius:9px;padding:10px;background:#103442;color:white;border:1px solid #2d5a67;font-size:16px}
+.lt-v2-content input[type=range]{width:100%;accent-color:#24d5cc;min-height:30px}
+.lt-v2-section{font-size:14px;font-weight:700;color:#f4ffff;margin:15px 0 10px}
+.lt-v2-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.lt-v2-grid>*{min-width:0}.lt-v2-sub{margin:13px 0;border-top:1px solid #234956;padding-top:12px;color:#b8d4dc}.lt-v2-sub>summary{cursor:pointer;font-weight:600;padding:5px 0}
+.lt-v2-progress{background:#103442;border-radius:12px;padding:12px;margin-top:12px}
+.lt-v2-progress-row{margin:9px 0}.lt-v2-progress-line{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin-bottom:6px}.lt-v2-progress-line span:last-child{color:#24d5cc}
+.lt-v2-track{height:8px;background:#27505b;border-radius:10px;overflow:hidden}.lt-v2-fill{height:100%;background:#24d5cc;border-radius:10px;width:0}
+.lt-v2-water,.lt-v2-steps{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:0 14px 14px}
+.lt-v2-water strong{font-size:22px;color:#24d5cc}.lt-v2-water small{display:block;color:#a1c5ce;font-size:11px}
+.lt-v2-water button,.lt-v2-btn{border:0!important;background:#24bcb7!important;color:#03232d!important;border-radius:10px!important;padding:11px 15px!important;font-weight:800!important;white-space:nowrap}
+.lt-v2-water .lt-v2-undo{background:#173e49!important;color:#b8d4dc!important;padding:8px!important;font-size:12px!important}
+.lt-v2-steps input{max-width:155px!important;min-width:0!important;font-size:18px!important;background:#103442!important;color:white!important;border:1px solid #2d5a67!important;border-radius:10px!important;padding:10px!important}
+.lt-v2-steps label{font-size:12px;color:#a1c5ce}.lt-v2-note{color:#a1c5ce;font-size:12px;line-height:1.5}
+.lt-v2-slider{padding:12px 0;border-bottom:1px solid #234956}.lt-v2-slider-top{display:flex;justify-content:space-between;gap:10px;font-size:14px}.lt-v2-slider-top output{font-size:18px;color:#24d5cc;font-weight:800}
+.lt-v2-slider-ends{display:flex;justify-content:space-between;color:#789aa7;font-size:11px}
+.lt-v2-card .hydration-box{padding:0!important;border:0!important;background:transparent!important}
+.lt-v2-card .hydration-box>.flex{display:none!important}
+.lt-v2-card .hydration-progress{display:none!important}
+.lt-v2-card .water-glasses{display:none!important}
+.lt-v2-card .sleep-fields{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.lt-v2-card .sleep-primary{grid-column:1/-1}
+.lt-v2-ritual-progress{font-size:12px;color:#a1c5ce;margin-bottom:12px}
+.lt-v2-ritual-nav{display:flex;gap:8px;margin-top:14px}.lt-v2-ritual-nav button{flex:1}
+.lt-v2-card[hidden],#lt-v2-reminder[hidden]{display:none!important}
+#lt-v2-reminder{background:#103442;border:1px solid #24bcb7;border-radius:12px;padding:12px;margin:12px 0;color:white}
+body.lt-v2-keyboard .mobile-tabs,body.lt-v2-keyboard .lt-bottom-nav,body.lt-v2-keyboard nav,body.lt-v2-keyboard .bottom-nav{display:none!important;visibility:hidden!important}
+@media(max-width:390px){.lt-v2-card>summary{padding:12px 10px}.lt-v2-content{padding:0 10px 14px}.lt-v2-icon{flex-basis:38px;height:38px}.lt-v2-head strong{font-size:15px}}
 </style></head><body><div id="ltSplash" class="lt-splash" role="status" aria-label="Ouverture de LifeTrack"><div class="lt-splash-inner"><img src="icon-512.png?v=final" alt="" class="lt-splash-symbol"/><div class="lt-splash-title">Life<span>Track</span></div><div class="lt-splash-tagline">SUIVI · PERFORMANCE · ÉVOLUTION</div><div class="lt-splash-pillar-row"><span>Sport</span><span>Nutrition</span><span>Sommeil</span><span>Équilibre</span></div><div class="lt-splash-progress"></div></div><button id="ltSkipSplash" type="button" aria-label="Passer l'animation">Passer</button></div><dialog id="ltMethodDialog" class="lt-method-dialog"><button id="ltMethodClose" type="button" aria-label="Fermer">×</button><h3 id="ltMethodTitle"></h3><p id="ltMethodText"></p></dialog><header><div class="brand-header"><img alt="" class="brand-logo" src="icon-192.png?v=final"/><div><h1><span>Life</span><em>Track</em></h1><small>Suivi · Performance · Évolution</small></div></div><div class="theme-control"><label for="darkToggle" aria-label="Mode sombre" title="Mode sombre">🌙</label><input id="darkToggle" role="switch" type="checkbox"/></div></header><main class="wrap"><div class="note lt-storage-note" style="margin-bottom:15px">Données enregistrées sur cet appareil · Sauvegarde JSON recommandée · Synchronisation indisponible.</div><nav><button class="active" data-tab="dashboard">Home</button><button data-tab="day">Ma journée</button><button data-tab="sportpage">Sport</button><button data-tab="stats">Analyses</button><button data-tab="reports">Bilans & Données</button></nav>
 <section class="page active lt-concept-home" id="dashboard">
 <div class="lt-hero-goals"><div class="panel goal-panel lt-goal" id="lt-weight-card" role="button" tabindex="0"><div class="lt-goal-heading"><span class="lt-concept-icon" data-lt-icon="scale"></span><h2>Poids</h2><span class="lt-chevron">›</span></div><div class="goal-wrap" id="weightGoal"></div><div class="lt-mini-bars" id="lt-weight-mini"></div></div><div class="panel goal-panel lt-goal" id="lt-fat-card" role="button" tabindex="0"><div class="lt-goal-heading"><span class="lt-concept-icon" data-lt-icon="body"></span><h2>Masse grasse</h2><span class="lt-chevron">›</span></div><div class="goal-wrap" id="bodyFatGoal"></div><div class="lt-mini-bars" id="lt-fat-mini"></div></div></div>
@@ -850,51 +940,92 @@ const render=()=>{const items=read().ideas||[];$('lt-ideas-list').replaceChildre
 syncDate();syncSleep();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
-</script><script id="lt-v090-script">
+</script><script id="lt-v2-rebuild">
 (function(){'use strict';
-const KEY='lifetrack-v01';const $=id=>document.getElementById(id);
-const read=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){return {}}};
-const localToday=()=>{const n=new Date();return n.getFullYear()+'-'+String(n.getMonth()+1).padStart(2,'0')+'-'+String(n.getDate()).padStart(2,'0')};const date=()=> $('date')?.value||localToday();
-const day=()=>read().days?.[date()]||{};
-function patch(values){const st=read();st.days??={};st.days[date()]??={};Object.assign(st.days[date()],values);localStorage.setItem(KEY,JSON.stringify(st));document.dispatchEvent(new Event('lifetrack:v9saved'));}
-function card(title,open=false){const d=document.createElement('details');d.className='lt-v9-card';d.open=open;const sum=document.createElement('summary');sum.textContent=title;const body=document.createElement('div');body.className='lt-v9-content';d.append(sum,body);return {d,body,sum};}
-function field(label,key,type='number',step='1'){const box=document.createElement('div');const l=document.createElement('label');l.textContent=label;const inp=document.createElement('input');inp.type=type;inp.dataset.v9=key;if(type==='number'){inp.min=0;inp.max=10;inp.step=step;}box.append(l,inp);return box;}
-function init(){const editor=$('lt-j-editor');if(!editor||$('lt-v9-priorities'))return;
+const $=id=>document.getElementById(id),KEY='lifetrack-v01';
+const today=()=>{const n=new Date();return [n.getFullYear(),String(n.getMonth()+1).padStart(2,'0'),String(n.getDate()).padStart(2,'0')].join('-')};
+const date=()=> $('date')?.value||today();
+const store=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch{return {}}};
+const data=()=>store().days?.[date()]||{};
+function patch(obj){const st=store();st.days??={};st.days[date()]??={};Object.assign(st.days[date()],obj);localStorage.setItem(KEY,JSON.stringify(st));document.dispatchEvent(new Event('lifetrack:v2saved'));}
+const fmt=(v,d=1)=>Number(v||0).toLocaleString('fr-FR',{maximumFractionDigits:d});
+const input=k=>document.querySelector('#lt-j-editor [data-field="'+k+'"]');
+function make(tag,cls,html){const el=document.createElement(tag);if(cls)el.className=cls;if(html!==undefined)el.innerHTML=html;return el}
+function card(title,ico,summary){const el=make('details','lt-v2-card');const head=make('summary','',`<span class="lt-v2-icon">${ico}</span><span class="lt-v2-head"><strong>${title}</strong><small>—</small></span><span class="lt-v2-chevron">⌄</span>`);const body=make('div','lt-v2-content');el.append(head,body);head.querySelector('small').dataset.summary=summary;return {el,body,head};}
+function sub(label,els){const d=make('details','lt-v2-sub');d.append(make('summary','',label));els.forEach(e=>e&&d.append(e));return d;}
+function slider(label,key,legacy,optional=false){const wrap=make('div','lt-v2-slider');const top=make('div','lt-v2-slider-top');const text=make('span','');text.textContent=label;const out=make('output','','— /10');top.append(text,out);const range=make('input');range.type='range';range.min='0';range.max='10';range.step='.5';range.value='5';range.setAttribute('aria-label',label);const clear=make('button','secondary','Effacer');clear.type='button';clear.style.cssText='font-size:11px;padding:4px 8px;margin-top:5px';clear.hidden=true;
+wrap.append(top,range,make('div','lt-v2-slider-ends','<span>0</span><span>10</span>'),clear);
+function get(){const d=data();return legacy?(d[legacy]??null):(d[key]??null)}
+function refresh(){const v=get();if(document.activeElement!==range)range.value=v??5;out.textContent=v===null||v===''?'— /10':fmt(v)+' /10';clear.hidden=v===null||v==='';}
+range.addEventListener('input',()=>{out.textContent=fmt(range.value)+' /10'});
+range.addEventListener('change',()=>{if(legacy){const el=input(legacy);if(el){el.value=range.value;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));}}else patch({[key]:Number(range.value)});refresh()});
+clear.addEventListener('click',()=>{if(legacy){const el=input(legacy);if(el){el.value='';el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));}}else patch({[key]:null});refresh()});
+if(legacy){const old=input(legacy);if(old)old.parentElement.style.display='none'}
+document.addEventListener('lifetrack:v2refresh',refresh);refresh();return wrap;}
+function init(){const editor=$('lt-j-editor');if(!editor||$('lt-v2-root'))return;
 const panel=editor.querySelector('.panel');if(!panel)return;
 const sections=[...panel.querySelectorAll(':scope > .daily-section')];if(sections.length<5)return;
 const [composition,steps,nutrition,water,sleep]=sections;
-const state=card('01 · État du jour',true);panel.insertBefore(state.d,composition);state.body.append(composition);
-const mood=document.createElement('div');mood.className='fields';mood.append(field('Moral du matin /10','morale','number','.5'),field('Stress du jour /10 (soir)','stress','number','.5'));state.body.append(mood);
-const morning=sleep.querySelector('[data-field="morning"]')?.parentElement;const evening=sleep.querySelector('[data-field="evening"]')?.parentElement;
-if(morning){state.body.append(morning)}
-if(evening){const detail=document.createElement('details');detail.className='lt-v9-sub';detail.innerHTML='<summary>Forme du soir (facultatif)</summary>';detail.append(evening);state.body.append(detail)}
-const sleepCard=card('02 · Sommeil & récupération');state.d.after(sleepCard.d);sleepCard.body.append(sleep);
-const sf=sleep.querySelector('.sleep-fields');const bed=sleep.querySelector('[data-field="bedtime"]')?.parentElement;const wake=sleep.querySelector('[data-field="wakeTime"]')?.parentElement;const quality=sleep.querySelector('[data-field="sleepQuality"]')?.parentElement;const primary=sleep.querySelector('.sleep-primary');
-if(sf&&bed&&wake&&quality){sf.prepend(bed,wake,quality);if(primary){primary.classList.add('lt-v9-wide');quality.after(primary)}const advanced=document.createElement('details');advanced.className='lt-v9-sub lt-v9-wide';advanced.innerHTML='<summary>Données de sommeil avancées (facultatives)</summary>';[...sf.children].filter(x=>![bed,wake,quality,primary].includes(x)).forEach(x=>advanced.append(x));sf.append(advanced)}
-const nutritionCard=card('03 · Nutrition & Hydratation');sleepCard.d.after(nutritionCard.d);nutritionCard.body.append(nutrition,water);
-const act=card('04 · Activité & Sport');nutritionCard.d.after(act.d);act.body.append(steps);
-const hint=document.createElement('p');hint.className='lt-v9-mini';hint.textContent='Les séances détaillées restent dans Sport. Les activités domestiques ne majorent pas automatiquement le TDEE.';act.body.append(hint);
-const sportButton=document.createElement('button');sportButton.type='button';sportButton.textContent='Ouvrir mes séances dans Sport';sportButton.className='lt-v9-primary';sportButton.onclick=()=>document.querySelector('[data-tab="sportpage"]')?.click();act.body.append(sportButton);
-const journalPanel=editor.querySelectorAll(':scope > .panel')[1];const journal=card('05 · Journal & Priorités');act.d.after(journal.d);journal.body.id='lt-v9-priorities';
-const heading=document.createElement('p');heading.textContent='Mes 3 priorités du jour';journal.body.append(heading);
-const tasks=document.createElement('div');tasks.className='lt-v9-tasks';journal.body.append(tasks);
-for(let i=0;i<3;i++){const row=document.createElement('div');row.className='lt-v9-task';const check=document.createElement('input');check.type='checkbox';check.dataset.taskDone=i;const input=document.createElement('input');input.type='text';input.placeholder='Priorité '+(i+1);input.dataset.task=i;row.append(check,input);tasks.append(row);const save=()=>{const items=[...tasks.querySelectorAll('[data-task]')].map((x,j)=>({text:x.value,done:tasks.querySelector('[data-task-done="'+j+'"]').checked}));patch({prioritiesV9:items});};check.addEventListener('change',save);input.addEventListener('change',save);}
-const notes=journalPanel?.querySelector('[data-field="notes"]');if(notes){const wrap=notes.parentElement===journalPanel?notes:null;const l=document.createElement('label');l.textContent='Mon journal (facultatif)';journal.body.append(l,notes)}
-const tomorrow=journalPanel?.querySelector('[data-field="tomorrow"]');if(tomorrow){const detail=document.createElement('details');detail.className='lt-v9-sub';detail.innerHTML='<summary>Préparer demain · 3 priorités</summary>';detail.append(tomorrow);journal.body.append(detail)}
-const legacy=document.createElement('details');legacy.className='lt-v9-sub';legacy.innerHTML='<summary>Anciennes questions guidées (conservées)</summary>';for(const key of ['success','improve']){const el=journalPanel?.querySelector('[data-field="'+key+'"]');if(el)legacy.append(el)}journal.body.append(legacy);
-const ideaButton=document.createElement('button');ideaButton.type='button';ideaButton.textContent='Ouvrir la boîte à idées';ideaButton.className='lt-v9-primary';ideaButton.onclick=()=>{const el=$('lt-ideas-text')||$('lt-idea-text');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.focus()}else alert('La boîte à idées est accessible depuis le tableau de bord.');};journal.body.append(ideaButton);
-if(journalPanel){const actions=journalPanel.querySelector('.actions');if(actions){const legacyActions=document.createElement('details');legacyActions.className='lt-v9-sub';legacyActions.innerHTML='<summary>Actions avancées · export et suppression</summary>';legacyActions.append(actions);journal.body.append(legacyActions);}journalPanel.style.display='none';}
-const eveningPrompt=document.createElement('div');eveningPrompt.id='lt-v9-evening-prompt';eveningPrompt.hidden=true;eveningPrompt.innerHTML='<strong>🌙 Rituel du soir · 21 h</strong><p>Stress du jour, forme du soir et priorités de demain. Quelques instants suffisent.</p><button type="button" class="lt-v9-primary">Commencer</button> <button type="button" class="secondary" data-v9-dismiss>Plus tard</button>';
-state.d.before(eveningPrompt);
-eveningPrompt.querySelector('button').onclick=()=>{state.d.open=true;journal.d.open=true;eveningPrompt.hidden=true;state.d.scrollIntoView({behavior:'smooth',block:'start'});};
-eveningPrompt.querySelector('[data-v9-dismiss]').onclick=()=>{sessionStorage.setItem('lt-v9-evening-dismiss',date());eveningPrompt.hidden=true};
-function refresh(){const d=day();for(const inp of editor.querySelectorAll('[data-v9]')){if(document.activeElement!==inp)inp.value=d[inp.dataset.v9]??'';}const rows=d.prioritiesV9||[];tasks.querySelectorAll('[data-task]').forEach((inp,i)=>{if(document.activeElement!==inp)inp.value=rows[i]?.text||'';});tasks.querySelectorAll('[data-task-done]').forEach((inp,i)=>inp.checked=!!rows[i]?.done);const now=new Date();eveningPrompt.hidden=now.getHours()<21||date()!==localToday()||sessionStorage.getItem('lt-v9-evening-dismiss')===date()||d.stress!==undefined&&d.stress!==null&&d.stress!=='';}
-editor.querySelectorAll('[data-v9]').forEach(inp=>inp.addEventListener('change',()=>{const value=inp.value===''?null:Number(inp.value);patch({[inp.dataset.v9]:value});refresh();}));
-$('date')?.addEventListener('change',refresh);document.addEventListener('lifetrack:v9saved',()=>setTimeout(refresh,20));
-const nativeTab=document.querySelectorAll('nav [data-tab]');nativeTab.forEach(btn=>btn.addEventListener('click',()=>{const current=new Date();const today=current.getFullYear()+'-'+String(current.getMonth()+1).padStart(2,'0')+'-'+String(current.getDate()).padStart(2,'0');if($('date')&&$('date').value!==today){$('date').value=today;$('date').dispatchEvent(new Event('change',{bubbles:true}));}setTimeout(refresh,80)}));
-// iOS keyboard: do not float the bottom navigation above the virtual keyboard.
-document.addEventListener('focusin',e=>{if(e.target.matches('input,textarea,select'))document.body.classList.add('lt-v9-typing')});document.addEventListener('focusout',()=>setTimeout(()=>{if(!document.activeElement?.matches('input,textarea,select'))document.body.classList.remove('lt-v9-typing')},100));
+const journalPanel=editor.querySelectorAll(':scope > .panel')[1];
+const root=make('div');root.id='lt-v2-root';panel.insertBefore(root,composition);
+const cards=[card('État du jour','♡','state'),card('Sommeil & récupération','☾','sleep'),card('Nutrition & Hydratation','♨','nutrition'),card('Activité & Sport','♧','activity'),card('Journal','✎','journal'),card('Rituel du soir','☽','ritual')];cards.forEach(c=>root.append(c.el));
+// Only one expanded card at a time.
+cards.forEach(c=>c.el.addEventListener('toggle',()=>{if(c.el.open)cards.forEach(other=>{if(other!==c)other.el.open=false})}));
+const [c1,c2,c3,c4,c5,c6]=cards;
+// 01 body composition, morning mood, stress and optional symptoms.
+c1.body.append(composition,make('h3','lt-v2-section','Mon ressenti du matin'),slider('Forme physique','morning','morning'),slider('Moral','morale'));
+const stress=slider('Stress global de la journée (soir)','stress');c1.body.append(make('h3','lt-v2-section','À renseigner le soir'),stress);
+const evening=slider('Forme du soir','evening','evening',true);const morningStress=slider('Stress du matin (facultatif)','morningStress');
+const pain=input('pain')||input('painNote');c1.body.append(sub('Informations complémentaires',[evening,morningStress,pain?.parentElement]));
+// 02 sleep: move three essentials, preserve other native fields in details.
+const sf=sleep.querySelector('.sleep-fields');const bed=input('bedtime')?.parentElement,wake=input('wakeTime')?.parentElement,quality=input('sleepQuality')?.parentElement,primary=sleep.querySelector('.sleep-primary');
+c2.body.append(make('h3','lt-v2-section','Ma nuit'));const sleepGrid=make('div','lt-v2-grid');[bed,wake].forEach(x=>x&&sleepGrid.append(x));c2.body.append(sleepGrid);if(primary)c2.body.append(primary);c2.body.append(slider('Qualité ressentie du sommeil','sleepQuality','sleepQuality'));
+const sleepAdvanced=make('div');if(sf)[...sf.children].forEach(x=>{if(x!==bed&&x!==wake&&x!==quality&&x!==primary)sleepAdvanced.append(x)});
+[...sleep.children].filter(x=>x!==sf&&x.tagName!=='H3').forEach(x=>sleepAdvanced.append(x));c2.body.append(sub('Données avancées de la montre',[sleepAdvanced]));sleep.remove();
+// 03 nutrition with complete macros and accessible water quick action.
+c3.body.append(nutrition);const quick=make('div','lt-v2-water');quick.innerHTML='<div><strong id="lt-v2-water-total">0 L</strong><small id="lt-v2-water-caption">Hydratation du jour</small></div><div style="display:flex;gap:6px;align-items:center"><button type="button" id="lt-v2-water-minus" class="lt-v2-undo" aria-label="Retirer un verre">↶</button><button type="button" id="lt-v2-water-plus" aria-label="Ajouter un verre d’eau">+1 verre</button></div>';
+c3.head.after(quick);c3.body.append(make('h3','lt-v2-section','Objectifs du jour'));
+const gauges=make('div','lt-v2-progress');gauges.innerHTML=['Protéines','Fibres','Hydratation'].map((name,i)=>`<div class="lt-v2-progress-row"><div class="lt-v2-progress-line"><span>${name}</span><span id="lt-v2-glabel-${i}">—</span></div><div class="lt-v2-track"><div class="lt-v2-fill" id="lt-v2-gfill-${i}"></div></div></div>`).join('');c3.body.append(gauges);
+c3.body.append(sub('Détails de l’hydratation',[water]));
+const plus=$('lt-v2-water-plus'),minus=$('lt-v2-water-minus');plus.onclick=()=>$('addGlass')?.click();minus.onclick=()=>{const native=$('removeGlass');if(native&&!native.classList.contains('hidden'))native.click();else {const el=input('glasses');if(el&&Number(el.value)>0){el.value=Number(el.value)-1;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}))}}};
+// 04 steps input is in the CLOSED card; original field and native persistence retained.
+const stepInput=input('steps');const stepQuick=make('div','lt-v2-steps');stepQuick.innerHTML='<label for="lt-v2-step-input">Pas du jour</label>';if(stepInput){stepInput.id='lt-v2-step-input';stepInput.setAttribute('inputmode','numeric');stepQuick.append(stepInput)}c4.head.after(stepQuick);steps.remove();
+c4.body.append(make('p','lt-v2-note','Les séances détaillées se saisissent dans Sport. Les activités domestiques ne majorent pas automatiquement le TDEE. Les pas déjà comptés dans une séance ne sont pas ajoutés une seconde fois.'));
+const goSport=make('button','lt-v2-btn','Voir mes séances dans Sport');goSport.type='button';goSport.onclick=()=>document.querySelector('nav [data-tab="sportpage"]')?.click();c4.body.append(goSport);
+// 05 journal only. Legacy notes are kept; no priorities fields here.
+const notes=input('notes');c5.body.append(make('h3','lt-v2-section','Mon journal'));if(notes)c5.body.append(notes);
+const idea=make('div');idea.innerHTML='<label>Nouvelle idée</label><select id="lt-v2-idea-category"><option value="lifetrack">Amélioration LifeTrack</option><option value="personnel">Projet personnel</option><option value="autre">Autre</option></select><textarea id="lt-v2-idea-text" rows="2" placeholder="Une idée à conserver…"></textarea><button type="button" class="lt-v2-btn" id="lt-v2-add-idea">Enregistrer l’idée</button><div id="lt-v2-ideas"></div>';c5.body.append(sub('Boîte à idées',[idea]));
+$('lt-v2-add-idea').onclick=()=>{const val=$('lt-v2-idea-text').value.trim();if(!val)return;const st=store();st.ideasV2??=[];st.ideasV2.push({text:val,category:$('lt-v2-idea-category').value,status:'Nouvelle',createdAt:new Date().toISOString()});localStorage.setItem(KEY,JSON.stringify(st));$('lt-v2-idea-text').value='';refresh()};
+const oldNotes=['success','improve'].map(input).filter(Boolean);if(oldNotes.length)c5.body.append(sub('Anciennes notes guidées (historique)',oldNotes));
+// 06 ritual: three steps, single source for evening stress/form and tomorrow priorities.
+const tomorrow=input('tomorrow');const ritual=make('div');c6.body.append(ritual);let ritualStep=0;
+function renderRitual(){ritual.replaceChildren();const h=make('div','lt-v2-ritual-progress',`Étape ${ritualStep+1} sur 3 · 21 h · Facultatif`);ritual.append(h);
+if(ritualStep===0){ritual.append(make('h3','lt-v2-section','Quel a été ton stress global aujourd’hui ?'),slider('Stress global du jour','stress'))}
+if(ritualStep===1){ritual.append(make('h3','lt-v2-section','Comment te sens-tu ce soir ?'),slider('Forme du soir (facultatif)','evening','evening',true))}
+if(ritualStep===2){ritual.append(make('h3','lt-v2-section','Mes 3 priorités pour demain'));const v=(tomorrow?.value||data().tomorrow||'').split('\n').map(x=>x.replace(/^\s*\d+[.)-]?\s*/,''));for(let i=0;i<3;i++){const inp=make('input');inp.type='text';inp.placeholder='Priorité '+(i+1);inp.value=v[i]||'';inp.dataset.ritualPriority=i;inp.style.marginBottom='8px';inp.addEventListener('change',savePriorities);ritual.append(inp)}ritual.append(make('p','lt-v2-note','Ces priorités apparaîtront demain sur Home, sans modifier son interface.'))}
+const nav=make('div','lt-v2-ritual-nav');if(ritualStep>0){const back=make('button','secondary','Retour');back.type='button';back.onclick=()=>{ritualStep--;renderRitual()};nav.append(back)}const next=make('button','lt-v2-btn',ritualStep===2?'Terminer':'Continuer');next.type='button';next.onclick=()=>{if(ritualStep===2){savePriorities();patch({ritualDone:true});c6.el.open=false;refresh()}else{ritualStep++;renderRitual()}};nav.append(next);ritual.append(nav);}
+function savePriorities(){const lines=[...ritual.querySelectorAll('[data-ritual-priority]')].map(x=>x.value.trim()).filter(Boolean).slice(0,3);const v=lines.map((x,i)=>(i+1)+'. '+x).join('\n');if(tomorrow){tomorrow.value=v;tomorrow.dispatchEvent(new Event('input',{bubbles:true}));tomorrow.dispatchEvent(new Event('change',{bubbles:true}))}else patch({tomorrow:v});}
+renderRitual();
+if(journalPanel){journalPanel.style.display='none';}
+const reminder=make('div');reminder.id='lt-v2-reminder';reminder.hidden=true;reminder.innerHTML='<strong>☾ Rituel du soir · 21 h</strong><p>Stress, forme du soir et priorités pour demain.</p><button type="button" class="lt-v2-btn">Commencer</button> <button type="button" class="secondary" id="lt-v2-dismiss">Plus tard</button>';root.prepend(reminder);
+reminder.querySelector('.lt-v2-btn').onclick=()=>{c6.el.open=true;reminder.hidden=true;c6.el.scrollIntoView({behavior:'smooth',block:'start'})};$('lt-v2-dismiss').onclick=()=>{sessionStorage.setItem('lt-v2-dismiss-'+date(),'1');reminder.hidden=true};
+function refresh(){const d=data(),targets=store().targets||{};const total=Number(input('glasses')?.value||d.glasses||0)*Number($('glassSize')?.value||250)/1000+Number(input('foodWater')?.value||d.foodWater||0)+(Number(d.waterCorrection)||0);$('lt-v2-water-total').textContent=fmt(total,2)+' L';$('lt-v2-water-caption').textContent=fmt(input('glasses')?.value||d.glasses||0,0)+' verres · autres apports inclus';
+const weight=Number(d.weight)||Number(targets.weight)||0;const pg=weight?Math.ceil(weight*2):Number(targets.protein)||0;const vals=[[Number(d.protein)||0,pg,'g'],[Number(d.fiber)||0,30,'g'],[total,Number(targets.water)||0,'L']];vals.forEach(([v,g,u],i)=>{$('lt-v2-glabel-'+i).textContent=fmt(v,2)+' / '+(g?fmt(g,2):'—')+' '+u;$('lt-v2-gfill-'+i).style.width=g?Math.min(100,v/g*100)+'%':'0%'});
+const summary=[`${fmt(d.weight||0,2)} kg · Forme ${d.morning??'—'}/10`,`${d.bedtime||'—'} → ${d.wakeTime||'—'} · Qualité ${d.sleepQuality??'—'}/10`,`${fmt(d.kcal||0,0)} kcal · ${fmt(d.protein||0,0)} g protéines`,`${fmt(d.steps||0,0)} pas · Sport dans l’onglet dédié`,d.notes?'Journal renseigné':'Journal à compléter',d.ritualDone?'Rituel terminé':'Stress · Forme · Priorités de demain'];cards.forEach((c,i)=>c.head.querySelector('small').textContent=summary[i]);
+const now=new Date();reminder.hidden=now.getHours()<21||date()!==today()||!!sessionStorage.getItem('lt-v2-dismiss-'+date())||!!d.ritualDone;
+$('lt-v2-ideas').replaceChildren(...(store().ideasV2||[]).slice(-5).reverse().map(x=>{const e=make('p','lt-v2-note');e.textContent=x.text+' · '+x.status;return e}));document.dispatchEvent(new Event('lifetrack:v2refresh'));}
+$('date')?.addEventListener('change',()=>{ritualStep=0;renderRitual();setTimeout(refresh,0)});document.addEventListener('lifetrack:v2saved',refresh);
+for(const el of [stepInput,input('glasses'),input('foodWater'),input('kcal'),input('protein'),input('fiber'),input('weight'),$('glassSize'),notes])el?.addEventListener('change',()=>setTimeout(refresh,50));
+// iOS: hide bottom navigation during editing even if viewport scrolls with the keyboard.
+const isEdit=e=>e&&e.matches&&e.matches('input,textarea,select,[contenteditable="true"]');
+document.addEventListener('focusin',e=>{if(isEdit(e.target))document.body.classList.add('lt-v2-keyboard')});
+document.addEventListener('focusout',()=>setTimeout(()=>{if(!isEdit(document.activeElement))document.body.classList.remove('lt-v2-keyboard')},180));
+if(window.visualViewport){const check=()=>{const reduced=window.innerHeight-window.visualViewport.height>130;if(reduced&&isEdit(document.activeElement))document.body.classList.add('lt-v2-keyboard');else if(!isEdit(document.activeElement))document.body.classList.remove('lt-v2-keyboard')};window.visualViewport.addEventListener('resize',check);window.visualViewport.addEventListener('scroll',check)}
+// Reset date to today on navigation, retaining the existing selected-day workflow elsewhere.
+document.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>{if($('date')&&$('date').value!==today()){$('date').value=today();$('date').dispatchEvent(new Event('change',{bubbles:true}))}}));
+// Keep original day data storage and date handlers; force new card editor to be the daily UI.
+editor.hidden=false;const toggle=$('lt-j-editor-toggle');if(toggle)toggle.hidden=true;
 refresh();document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh()});}
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(init,150));else setTimeout(init,150);
 })();
 </script></body></html>
